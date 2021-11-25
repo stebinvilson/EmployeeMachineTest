@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC"
+    tools:context=".MainActivity">
+
+  <androidx.appcompat.widget.SearchView
+      android:id="@+id/employee_search"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#8F8585"
+      android:textCursorDrawable="@null"
+      app:iconifiedByDefault="false"
+      app:queryBackground="@null" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/emprecycler"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="5dp"
+      android:layout_below="@+id/employee_search"/>
+
+</RelativeLayout>
+
+</layout>
